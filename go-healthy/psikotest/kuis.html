@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psikotest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form action="kalkulasi.php" method="POST">
+    <!-- soal pertama -->
+    <h5>Apakah Anda sering merasa cemas dan khawatir tanpa alasan yang jelas?</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban1-1" name="soal-1" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="jawaban1-1">Sangat jarang atau tidak pernah</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban2-1" name="soal-1" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="jawaban2-1">Jarang</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban3-1" name="soal-1" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="jawaban3-1">Kadang-Kadang</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban4-1" name="soal-1" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban4-1">Sering</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban5-1" name="soal-1" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="jawaban5-1">Sangat Sering</label>
+    </div>
+
+    <!-- soal kedua -->
+    <h5>Bagaimana Anda merespons ketika menghadapi situasi yang menegangkan?</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban1-2" name="soal-2" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="jawaban1-2">Tetap tenang dan terkendali</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban2-2" name="soal-2" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="jawaban2-2">Agak tegang, tetapi tetap mengatasinya dengan baik</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban3-2" name="soal-2" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="jawaban3-2">Cemas dan sulit mengendalikan emosi</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban4-2" name="soal-2" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban4-2">Stres berlebihan dan kesulitan menghadapi situasi
+            tersebut</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban5-2" name="soal-2" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="jawaban5-2">Terlalu cemas dan kewalahan dalam menghadapi situasi yang
+            menegangkan</label>
+    </div>
+
+    <!-- soal ketiga -->
+    <h5>Apakah Anda merasa sulit untuk tidur karena terus memikirkan masalah atau kekhawatiran?</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban1-3" name="soal-3" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="jawaban1-3">Tidak Pernah</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban2-3" name="soal-3" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="jawaban2-3">Jarang sekali</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban3-3" name="soal-3" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="jawaban3-3">Kadang-Kadang</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban4-3" name="soal-3" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban4-3">Sering</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban5-3" name="soal-3" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="jawaban5-3">Hampir Setiap Hari</label>
+    </div>
+
+    <!-- soal ke-empat -->
+    <h5>Bagaimana Anda merespons terhadap perubahan atau situasi yang tidak terduga?</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban1-4" name="soal-4" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="jawaban1-4"> Mudah menyesuaikan diri dan mampu mengatasi perubahan
+            dengan baik</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban2-4" name="soal-4" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="jawaban2-4"> Agak kesulitan menyesuaikan diri, tetapi masih bisa
+            mengatasi</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban3-4" name="soal-4" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban3-4">Cemas dan stres dalam menghadapi perubahan atau situasi
+            yang tidak terduga</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban4-4" name="soal-4" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban4-4">Sangat cemas dan kesulitan mengatasi perubahan atau situasi
+            yang tidak terduga</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban5-4" name="soal-4" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="jawaban5-4">Merasa kewalahan dan sulit beradaptasi dengan perubahan
+            atau situasi yang tidak terduga</label>
+    </div>
+
+    <!-- soal ke-lima -->
+    <h5>Apakah Anda sering merasa lelah dan kehilangan energi secara fisik dan mental?</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban1-5" name="soal-5" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="jawaban1-5">Tidak Pernah</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban2-5" name="soal-5" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="jawaban2-5">Jarang sekali</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban3-5" name="soal-5" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="jawaban3-5">Kadang-Kadang</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban4-5" name="soal-5" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban4-5">Sering</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban5-5" name="soal-5" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="jawaban5-5">Hampir Setiap Hari</label>
+    </div>
+
+    <!-- soal ke enam -->
+    <h5>Bagaimana Anda mengatasi stres dalam kehidupan sehari-hari?</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban1-6" name="soal-6" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="jawaban1-6">Dengan baik dan efektif</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban2-6" name="soal-6" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="jawaban2-6">Agak efektif, tetapi kadang masih kesulitan</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban3-6" name="soal-6" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="jawaban3-6">Dengan kesulitan dan tidak selalu efektif</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban4-6" name="soal-6" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban4-6">Dengan kesulitan dan tidak ada strategi yang efektif</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban5-6" name="soal-6" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="jawaban5-6">Tidak mampu mengatasi stres secara efektif</label>
+    </div>
+
+    <!-- soal ke tujuh -->
+    <h5>Apakah Anda merasa cemas atau tegang secara konstan?</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban1-7" name="soal-7" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="jawaban1-7">Tidak pernah</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban2-7" name="soal-7" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="jawaban2-7">Jarang</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban3-7" name="soal-7" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="jawaban3-7">Kadang-Kadang</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban4-7" name="soal-7" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban4-7">Sering</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban5-7" name="soal-7" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="jawaban5-7">Hampir Setiap Saat</label>
+    </div>
+
+    <!-- soal ke delapan -->
+    <h5>Bagaimana Anda mengelola tekanan kerja atau tuntutan yang tinggi?</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban1-8" name="soal-8" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="jawaban1-8">Dengan baik dan efisien</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban2-8" name="soal-8" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="jawaban2-8">Agak efektif, tetapi terkadang masih terbebani</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban3-8" name="soal-8" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="jawaban3-8">Merasa terbebani dan kesulitan mengatasi tekanan kerja</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban4-8" name="soal-8" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban4-8">Sangat terbebani dan kesulitan mengatasi tuntutan yang tinggi</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban5-8" name="soal-8" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="jawaban5-8">Merasa kewalahan dan sulit mengelola tekanan kerja atau tuntutan yang tinggi</label>
+    </div>
+
+    <!-- soal ke sembilan -->
+    <h5>Apakah Anda mengalami gangguan tidur seperti sulit tidur, terbangun di tengah malam, atau mimpi buruk?</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban1-9" name="soal-9" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="jawaban1-9">Tidak pernah</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban2-9" name="soal-9" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="jawaban2-9">Jarang</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban3-9" name="soal-9" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="jawaban3-9">Kadang-Kadang</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban4-9" name="soal-9" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban4-9">Sering</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban5-9" name="soal-9" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="jawaban5-9">Hampir Setiap Malam</label>
+    </div>
+
+        <!-- soal ke sepuluh -->
+    <h5>Bagaimana Anda merasa mengenai kehidupan sehari-hari Anda secara keseluruhan?</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban1-10" name="soal-10" class="custom-control-input" value="1">
+        <label class="custom-control-label" for="jawaban1-10">Baik dan seimbang</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban2-10" name="soal-10" class="custom-control-input" value="2">
+        <label class="custom-control-label" for="jawaban2-10">Agak baik, tetapi ada beberapa aspek yang stres</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban3-10" name="soal-10" class="custom-control-input" value="3">
+        <label class="custom-control-label" for="jawaban3-10">Cukup stres dan merasa tertekan</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban4-10" name="soal-10" class="custom-control-input" value="4">
+        <label class="custom-control-label" for="jawaban4-10">Sangat stres dan merasa kewalahan</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="jawaban5-10" name="soal-10" class="custom-control-input" value="5">
+        <label class="custom-control-label" for="jawaban5-10">Sangat stres dan merasa tidak dapat menghadapinya dengan baik</label>
+    </div>
+    <br>
+    <button type="submit" name="submit" value="submit" class="btn btn-primary">Submit</button>
+</form>
+    </body>
+</html>

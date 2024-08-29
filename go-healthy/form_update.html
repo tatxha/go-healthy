@@ -1,0 +1,54 @@
+<?php
+    $sql = mysqli_query($conn,"select * from t_nutrisi_makanan where id_nutrisi = '$_GET[kode]'");
+    $data = mysqli_fetch_array($sql);
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Insert Data</title>
+</head>
+<body>
+    <h1>Form Insert Data</h1>
+
+    <form action="proses_insert.php" method="POST">
+        <table>
+            <tr>
+                <td>Id_nutrisi</td>
+                <td><input type="text" name="id_nutrisi" value="<?php echo $data['id_nutrisi'];?>"></td>
+            </tr>
+
+            <tr>
+                <td>Asal Nutrisi</td>
+                <td> <input type="text" name="asal_nutrisi" value="<?php echo $data['asal_nutrisi'];?>"></td>
+            </tr>
+
+            <tr>
+                <td>karbohidrat</td>
+                <td> <input type="text" name="k_karbo" value="<?php echo $data['k_karbo'];?>"></td>
+            </tr>
+
+            <tr>
+                <td>protein</td>
+                <td> <input type="text" name="k_protein" value="<?php echo $data['k_protein'];?>"></td>
+            </tr>
+
+            <tr>
+                <td>lemak</td>
+                <td> <input type="text" name="k_lemak" value="<?php echo $data['k_lemak'];?>"></td>
+            </tr>
+
+            <tr>
+                <td>vitamin</td>
+                <td> <input type="text" name="k_vit" value="<?php echo $data['k_vit'];?>"></td>
+            </tr>
+
+            <tr>
+                <td>kalsium</td>
+                <td> <input type="text" name="k_kalsium" value="<?php echo $data['k_kalsium'];?>"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
